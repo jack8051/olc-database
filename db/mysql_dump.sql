@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Poèítaè: localhost
--- Vytvoøeno: Sob 01. úno 2020, 17:20
+-- Vytvoøeno: Sob 01. úno 2020, 17:53
 -- Verze serveru: 5.7.17
 -- Verze PHP: 5.6.30
 
@@ -260,7 +260,8 @@ INSERT INTO `typ_zanr` (`id_typ_zanr`, `nazev`) VALUES
 --
 ALTER TABLE `album`
   ADD PRIMARY KEY (`id_album`),
-  ADD KEY `id_typ_zanr` (`id_typ_zanr`);
+  ADD KEY `id_typ_zanr` (`id_typ_zanr`),
+  ADD KEY `nazev` (`nazev`);
 
 --
 -- Klíèe pro tabulku `album_interpret`
@@ -283,13 +284,15 @@ ALTER TABLE `album_skladba`
 --
 ALTER TABLE `interpret`
   ADD PRIMARY KEY (`id_interpret`),
-  ADD KEY `id_typ_narodnost` (`id_typ_narodnost`);
+  ADD KEY `id_typ_narodnost` (`id_typ_narodnost`),
+  ADD KEY `nazev` (`nazev`);
 
 --
 -- Klíèe pro tabulku `skladba`
 --
 ALTER TABLE `skladba`
-  ADD PRIMARY KEY (`id_skladba`);
+  ADD PRIMARY KEY (`id_skladba`),
+  ADD KEY `delka` (`delka`);
 
 --
 -- Klíèe pro tabulku `typ_narodnost`
