@@ -2,8 +2,8 @@
 -- version 4.4.15.10
 -- https://www.phpmyadmin.net
 --
--- PoËÌtaË: localhost
--- Vytvo¯eno: Sob 01. ˙no 2020, 17:53
+-- Poƒç√≠taƒç: localhost
+-- Vytvo≈ôeno: Sob 01. √∫no 2020, 17:53
 -- Verze serveru: 5.7.17
 -- Verze PHP: 5.6.30
 
@@ -11,7 +11,7 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Datab·ze: `olc`
+-- Datab√°ze: `olc`
 --
 
 -- --------------------------------------------------------
@@ -34,8 +34,8 @@ CREATE TABLE IF NOT EXISTS `album` (
 INSERT INTO `album` (`id_album`, `id_typ_zanr`, `nazev`, `datum_vydani`) VALUES
 (1, 2, 'A Night at the Opera', '1975-11-21'),
 (2, 1, 'Waterloo', '1974-03-04'),
-(3, 3, 'Koncert B moll pro klavÌr a orchestr, op. 23', '1974-01-01'),
-(4, 4, 'SwingujÌcÌ semafor', '1996-01-01');
+(3, 3, 'Koncert B moll pro klav√≠r a orchestr, op. 23', '1974-01-01'),
+(4, 4, 'Swinguj√≠c√≠ semafor', '1996-01-01');
 
 -- --------------------------------------------------------
 
@@ -143,8 +143,8 @@ INSERT INTO `interpret` (`id_interpret`, `nazev`, `id_typ_narodnost`) VALUES
 (1, 'Queen', 2),
 (2, 'Olympic', 1),
 (3, 'ABBA', 3),
-(4, 'Petr IljiË »ajkovskij', 4),
-(5, 'Swing band Ferdinanda HavlÌka a jinÌ', 1);
+(4, 'Petr Iljiƒç ƒåajkovskij', 4),
+(5, 'Swing band Ferdinanda Havl√≠ka a jin√≠', 1);
 
 -- --------------------------------------------------------
 
@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `skladba` (
 --
 
 INSERT INTO `skladba` (`id_skladba`, `nazev`, `delka`) VALUES
-(1, 'Death on Two Legs (Decided toÖ)', '00:03:43'),
+(1, 'Death on Two Legs (Decided to‚Ä¶)', '00:03:43'),
 (2, 'Lazing on a Sunday Afternoon', '00:01:07'),
 (3, 'I''m in Love with My Car', '00:03:05'),
 (4, 'You''re My Best Friend', '00:02:52'),
@@ -175,7 +175,7 @@ INSERT INTO `skladba` (`id_skladba`, `nazev`, `delka`) VALUES
 (10, 'Good Company', '00:03:23'),
 (11, 'Bohemian Rhapsody', '00:05:55'),
 (12, 'God Save the Queen', '00:01:18'),
-(13, 'Waterloo (övÈdsk· verze)', '00:02:45'),
+(13, 'Waterloo (≈°v√©dsk√° verze)', '00:02:45'),
 (14, 'Sitting in the Palmtree', '00:03:39'),
 (15, 'King Kong Song', '00:03:14'),
 (16, 'Hasta Ma?ana', '00:03:05'),
@@ -186,28 +186,28 @@ INSERT INTO `skladba` (`id_skladba`, `nazev`, `delka`) VALUES
 (21, 'What About Livingstone?', '00:02:54'),
 (22, 'Gonna Sing You My Lovesong', '00:03:35'),
 (23, 'Suzy-Hang-Around', '00:03:11'),
-(24, 'Waterloo (anglick· verze)', '00:02:46'),
-(25, 'Koncert pro klavÌr a orchestr Ë. 1 b moll, op. 23', '00:32:48'),
+(24, 'Waterloo (anglick√° verze)', '00:02:46'),
+(25, 'Koncert pro klav√≠r a orchestr ƒç. 1 b moll, op. 23', '00:32:48'),
 (26, 'Allegro Non Troppo E Molto Maestoso', '00:19:20'),
 (27, 'Andantino semplice', '00:06:38'),
 (28, 'Allegro con fuoco', '00:06:42'),
-(29, 'SmÏs melodiÌ Ji¯Ìho älitra I.', '00:07:06'),
-(30, 'éelvÌ Blues', '00:03:08'),
-(31, 'Co je to l·ska', '00:01:36'),
-(32, 'Sup a ûluva', '00:02:49'),
-(33, 'SmÏs melodiÌ Ji¯Ìho älitra II.', '00:08:05'),
-(34, 'MagdalÈna', '00:01:50'),
-(35, 'äkrhola', '00:01:53'),
-(36, 'Mil·Ëek ', '00:02:34'),
-(37, 'SmÏs melodiÌ Ji¯Ìho älitra III.', '00:04:38'),
-(38, 'Protektor·tnÌ blues', '00:03:04'),
+(29, 'Smƒõs melodi√≠ Ji≈ô√≠ho ≈†litra I.', '00:07:06'),
+(30, '≈Ωelv√≠ Blues', '00:03:08'),
+(31, 'Co je to l√°ska', '00:01:36'),
+(32, 'Sup a ≈æluva', '00:02:49'),
+(33, 'Smƒõs melodi√≠ Ji≈ô√≠ho ≈†litra II.', '00:08:05'),
+(34, 'Magdal√©na', '00:01:50'),
+(35, '≈†krhola', '00:01:53'),
+(36, 'Mil√°ƒçek ', '00:02:34'),
+(37, 'Smƒõs melodi√≠ Ji≈ô√≠ho ≈†litra III.', '00:04:38'),
+(38, 'Protektor√°tn√≠ blues', '00:03:04'),
 (39, 'Hallo Satchmo', '00:02:01'),
-(40, 'Kdyby tisÌc klarinet˘', '00:03:04'),
-(41, 'M·me kapit·l', '00:02:32'),
+(40, 'Kdyby tis√≠c klarinet≈Ø', '00:03:04'),
+(41, 'M√°me kapit√°l', '00:02:32'),
 (42, 'Semafor Shaker', '00:02:28'),
-(43, 'Hrajeme d·l', '00:02:48'),
-(44, 'SmÏs melodiÌ Ji¯Ìho älitra IV.', '00:06:43'),
-(45, 'N·na v povÏt¯Ì', '00:03:34');
+(43, 'Hrajeme d√°l', '00:02:48'),
+(44, 'Smƒõs melodi√≠ Ji≈ô√≠ho ≈†litra IV.', '00:06:43'),
+(45, 'N√°na v povƒõt≈ô√≠', '00:03:34');
 
 -- --------------------------------------------------------
 
@@ -225,10 +225,10 @@ CREATE TABLE IF NOT EXISTS `typ_narodnost` (
 --
 
 INSERT INTO `typ_narodnost` (`id_typ_narodnost`, `nazev`) VALUES
-(1, 'Ëesk·'),
-(2, 'anglick·'),
-(3, 'övÈdsk·'),
-(4, 'rusk·');
+(1, 'ƒçesk√°'),
+(2, 'anglick√°'),
+(3, '≈°v√©dsk√°'),
+(4, 'rusk√°');
 
 -- --------------------------------------------------------
 
@@ -248,15 +248,15 @@ CREATE TABLE IF NOT EXISTS `typ_zanr` (
 INSERT INTO `typ_zanr` (`id_typ_zanr`, `nazev`) VALUES
 (1, 'pop'),
 (2, 'rock'),
-(3, 'klasick· hudba'),
+(3, 'klasick√° hudba'),
 (4, 'swing');
 
 --
--- KlÌËe pro exportovanÈ tabulky
+-- Kl√≠ƒçe pro exportovan√© tabulky
 --
 
 --
--- KlÌËe pro†tabulku `album`
+-- Kl√≠ƒçe pro¬†tabulku `album`
 --
 ALTER TABLE `album`
   ADD PRIMARY KEY (`id_album`),
@@ -264,7 +264,7 @@ ALTER TABLE `album`
   ADD KEY `nazev` (`nazev`);
 
 --
--- KlÌËe pro†tabulku `album_interpret`
+-- Kl√≠ƒçe pro¬†tabulku `album_interpret`
 --
 ALTER TABLE `album_interpret`
   ADD PRIMARY KEY (`id_album_interpret`),
@@ -272,7 +272,7 @@ ALTER TABLE `album_interpret`
   ADD KEY `id_album` (`id_album`);
 
 --
--- KlÌËe pro†tabulku `album_skladba`
+-- Kl√≠ƒçe pro¬†tabulku `album_skladba`
 --
 ALTER TABLE `album_skladba`
   ADD PRIMARY KEY (`id_album_skladba`),
@@ -280,7 +280,7 @@ ALTER TABLE `album_skladba`
   ADD KEY `id_album` (`id_album`);
 
 --
--- KlÌËe pro†tabulku `interpret`
+-- Kl√≠ƒçe pro¬†tabulku `interpret`
 --
 ALTER TABLE `interpret`
   ADD PRIMARY KEY (`id_interpret`),
@@ -288,20 +288,20 @@ ALTER TABLE `interpret`
   ADD KEY `nazev` (`nazev`);
 
 --
--- KlÌËe pro†tabulku `skladba`
+-- Kl√≠ƒçe pro¬†tabulku `skladba`
 --
 ALTER TABLE `skladba`
   ADD PRIMARY KEY (`id_skladba`),
   ADD KEY `delka` (`delka`);
 
 --
--- KlÌËe pro†tabulku `typ_narodnost`
+-- Kl√≠ƒçe pro¬†tabulku `typ_narodnost`
 --
 ALTER TABLE `typ_narodnost`
   ADD PRIMARY KEY (`id_typ_narodnost`);
 
 --
--- KlÌËe pro†tabulku `typ_zanr`
+-- Kl√≠ƒçe pro¬†tabulku `typ_zanr`
 --
 ALTER TABLE `typ_zanr`
   ADD PRIMARY KEY (`id_typ_zanr`);
@@ -346,31 +346,31 @@ ALTER TABLE `typ_narodnost`
 ALTER TABLE `typ_zanr`
   MODIFY `id_typ_zanr` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
--- OmezenÌ pro exportovanÈ tabulky
+-- Omezen√≠ pro exportovan√© tabulky
 --
 
 --
--- OmezenÌ pro tabulku `album`
+-- Omezen√≠ pro tabulku `album`
 --
 ALTER TABLE `album`
   ADD CONSTRAINT `Relace2` FOREIGN KEY (`id_typ_zanr`) REFERENCES `typ_zanr` (`id_typ_zanr`);
 
 --
--- OmezenÌ pro tabulku `album_interpret`
+-- Omezen√≠ pro tabulku `album_interpret`
 --
 ALTER TABLE `album_interpret`
   ADD CONSTRAINT `Relace10` FOREIGN KEY (`id_album`) REFERENCES `album` (`id_album`),
   ADD CONSTRAINT `Relace11` FOREIGN KEY (`id_interpret`) REFERENCES `interpret` (`id_interpret`);
 
 --
--- OmezenÌ pro tabulku `album_skladba`
+-- Omezen√≠ pro tabulku `album_skladba`
 --
 ALTER TABLE `album_skladba`
   ADD CONSTRAINT `Relace7` FOREIGN KEY (`id_album`) REFERENCES `album` (`id_album`),
   ADD CONSTRAINT `Relace8` FOREIGN KEY (`id_skladba`) REFERENCES `skladba` (`id_skladba`);
 
 --
--- OmezenÌ pro tabulku `interpret`
+-- Omezen√≠ pro tabulku `interpret`
 --
 ALTER TABLE `interpret`
   ADD CONSTRAINT `Relace9` FOREIGN KEY (`id_typ_narodnost`) REFERENCES `typ_narodnost` (`id_typ_narodnost`);
